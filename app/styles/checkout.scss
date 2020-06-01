@@ -1,0 +1,119 @@
+$bg-color-white: #F6F6F6;
+$bg-color-grey : #979393;
+$color-shadow : #c7c3c3a1;
+$color-title : rgb(41, 34, 34);
+
+.col-md-6,
+.col-md-12 {
+  padding: 0 5px;
+}
+
+.checkout__main--title.col-md-12 {
+  padding-left: 30px;
+}
+
+.checkout__main {
+  margin-bottom: 4rem;
+
+  .checkout_main--input {
+    border-radius: 3px;
+    border: none;
+    background-color: white;
+    box-shadow: 0 4px 2px -2px $color-shadow;
+
+    .checkout_main--input-visa {
+      background-position: 1px 1px;
+      background-repeat: no-repeat;
+      background-image: url(../images/visa.png);
+    }
+
+    label {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .form-control {
+      border: none;
+      box-shadow: none;
+      padding: 0;
+      height: 25px;
+    }
+  }
+
+  .checkout__main--title {
+    color: $color-title;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+    .checkout__main--title-number {
+      background-color: $color-title;
+      border-radius: 50%;
+      color: $bg-color-white;
+      display: inline-block;
+      position: relative;
+      text-align: center;
+      margin-right: 1rem;
+      line-height: 2rem;
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+
+  .checkout_main--box {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 4px 2px -2px $color-shadow;
+    padding: 7px;
+  }
+
+  .checkout_main--order {
+    border: 2px dotted $color-shadow;
+    border-radius: 5px;
+
+    ul {
+      list-style-type: none;
+      padding: 7px;
+
+      .checkout__main--list-item {
+        text-align: left;
+
+        .checkout__main--list-value {
+          float: right;
+        }
+
+        .checkout__main--list-value-total {
+          font-weight: 800;
+          color: $color-title;
+          font-size: 2rem;
+        }
+      }
+
+      .checkout__main--list-total {
+        font-weight: 800;
+      }
+
+      hr {
+        border: 0.8px dashed $color-shadow;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .checkout__main--title-order {
+      color: $color-title;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+  }
+
+  .checkout__main--button {
+    font-size: 1.25rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    height: 45px;
+    border: none;
+    border-radius: 3px;
+  }
+}
