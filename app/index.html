@@ -292,30 +292,32 @@
 
           <div class="mdl-cell mdl-cell--12-col">
             <div class="checkout_main--form container col-md-8">
-              <form action="/action_page.php">
+              <form class="form" id="form" action="/" method="GET" >
                 <div class="col-md-6">
                   <div class="checkout_main--input form-group col-md-12">
                     <label for="First name">First name</label>
                     <input type="text" class="form-control" id="first-name" placeholder="Enter name" name="first-name">
+
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="checkout_main--input form-group col-md-12">
                     <label for="Last name">Last name</label>
                     <input type="text" class="form-control" id="last-name" placeholder="Enter last name"
-                      name="last-name">
+                      name="last-name" >
                   </div>
                 </div>
                 <div class="col-md-12">
                 <div class="checkout_main--input form-group col-md-12">
                   <label for="Email">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="email" name="email">
+                  <input type="email" class="form-control" id="email" placeholder="email" name="email" >
                 </div>
               </div>
                 <div class="col-md-6">
                   <div class="checkout_main--input form-group col-md-12">
                     <label for="Country">Country</label>
-                    <select class="form-control" name="country" id="country">
+                    <select class="form-control" name="country" id="country" >
+                      <option value="" selected disabled>requred</option>
                       <option value="US">United States</option>
                       <option value="PL">Poland</option>
                       <option value="FR">France</option>
@@ -344,8 +346,9 @@
                   <div class="col-md-12">
                 <div class="checkout_main--input form-group col-md-12">
                   <label for="Credit Card Number">Credit Card Number</label>
-                  <input type="number" class="form-control checkout_main--input-visa" id="credit-card" placeholder="0000 - 0000 - 0000 - 0000"
+                  <input type="text" class="form-control" id="credit-card" placeholder="0000 - 0000 - 0000 - 0000"
                     name="credit-card">
+                    <img class="visa-icon" src="images/visa.png">
                 </div>
               </div>
                 <div class="col-md-6">
@@ -362,7 +365,7 @@
                       name="expiration-date">
                   </div>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12 submit_button">
                 <button class="checkout__main--button col-md-12 btn-lg btn-success" type="submit" class="btn btn-default"> <i class="fa fa-shopping-cart" style="font-weight: 900;"></i> Complete Purchase</button>
               </div>
               </form>

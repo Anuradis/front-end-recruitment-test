@@ -2,6 +2,7 @@ $bg-color-white: #F6F6F6;
 $bg-color-grey : #979393;
 $color-shadow : #c7c3c3a1;
 $color-title : rgb(41, 34, 34);
+$error-color : rgba(255, 0, 0, 0.733);
 
 .col-md-6,
 .col-md-12 {
@@ -15,17 +16,24 @@ $color-title : rgb(41, 34, 34);
 .checkout__main {
   margin-bottom: 4rem;
 
+  .error-text {
+    font-size: 1.12rem;
+    color: $error-color;
+  }
+
+
   .checkout_main--input {
+    .visa-icon {
+      height: 20px;
+      position: absolute;
+      bottom: 8px;
+      left: 10px;
+    }
+
     border-radius: 3px;
-    border: none;
+    border: transparent;
     background-color: white;
     box-shadow: 0 4px 2px -2px $color-shadow;
-
-    .checkout_main--input-visa {
-      background-position: 1px 1px;
-      background-repeat: no-repeat;
-      background-image: url(../images/visa.png);
-    }
 
     label {
       font-weight: 600;
@@ -109,11 +117,17 @@ $color-title : rgb(41, 34, 34);
   }
 
   .checkout__main--button {
-    font-size: 1.25rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    height: 45px;
     border: none;
     border-radius: 3px;
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    font-weight: 800;
+    height: 45px;
+    text-transform: uppercase;
+
+  }
+
+  .alert {
+    margin-top: 60px;
   }
 }
