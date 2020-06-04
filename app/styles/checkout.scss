@@ -21,15 +21,13 @@ $error-color : rgba(255, 0, 0, 0.733);
     color: $error-color;
   }
 
+  #credit-card {
+    background-image: url(../images/visa.svg);
+    height: 300px;
+    width: 300px;
+  }
 
   .checkout_main--input {
-    .visa-icon {
-      height: 20px;
-      position: absolute;
-      bottom: 8px;
-      left: 10px;
-    }
-
     border-radius: 3px;
     border: transparent;
     background-color: white;
@@ -47,6 +45,7 @@ $error-color : rgba(255, 0, 0, 0.733);
       height: 25px;
     }
   }
+
 
   .checkout__main--title {
     color: $color-title;
@@ -117,17 +116,14 @@ $error-color : rgba(255, 0, 0, 0.733);
   }
 
   .checkout__main--button {
+    position: relative;
     border: none;
     border-radius: 3px;
-    margin-bottom: 2rem;
     font-size: 1.25rem;
     font-weight: 800;
     height: 45px;
     text-transform: uppercase;
 
-  }
 
-  .alert {
-    margin-top: 60px;
   }
 }

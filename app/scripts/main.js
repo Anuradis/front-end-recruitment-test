@@ -127,6 +127,7 @@
       const error = document.createElement('div');
       error.innerText = message;
       error.className = 'error-text';
+      error.style.fontSize ='1.1rem'
       formControl.appendChild(error);
     }
   }
@@ -226,6 +227,7 @@
         feedback = document.createElement('div');
         feedback.innerText = 'Your data has been submited, thank you for filling out your information!'
         feedback.className = 'alert alert-success';
+        feedback.style.margin ='60px 0';
         submitBtn.appendChild(feedback);
         form.reset();
       }
@@ -235,6 +237,7 @@
         feedback = document.createElement('div');
         feedback.innerText = 'Unable to submit from, please correct data';
         feedback.className = 'alert alert-danger';
+        feedback.style.margin ='60px 0';
 
         submitBtn.appendChild(feedback);
       }
