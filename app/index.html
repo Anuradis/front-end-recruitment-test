@@ -286,7 +286,9 @@
       </div>
       <section class="checkout__main" id="checkout">
         <div class="container">
-          <p class="checkout__main--title col-md-12"><span class="checkout__main--title-number">1</span>Personal
+          <!-- find explaination of used inline style in checkout.scss file line 16 -->
+          <p class="checkout__main--title col-md-12" style="padding-left: 20px;">
+            <span class="checkout__main--title-number">1</span>Personal
             Information
           </p>
           <div class="checkout_main--form container col-md-8">
@@ -345,14 +347,16 @@
                   <label for="Credit Card Number">Credit Card Number</label>
                   <input type="text" class="form-control" id="credit-card" placeholder="0000 - 0000 - 0000 - 0000"
                     name="credit-card">
-                  <span class="visa-icon"></span>
+                  <!-- find explaination of used inline style in checkout.scss file line 16 -->
+                  <span class="visa-icon" style="background-image: url(../images/visa.svg); display: block; height: 40px; width: 40px;
+                  background-repeat: no-repeat; background-position: center; position: absolute; right: 5rem; bottom: 5px;"></span>
                 </div>
-
               </div>
               <div class="col-md-6">
                 <div class="checkout_main--input form-group col-md-12">
                   <label for="Security code">Security code</label>
-                  <input type="password" class="form-control" id="security-code" placeholder="***" name="security-code">
+                  <input type="password" class="form-control" id="security-code" placeholder="***" name="security-code"
+                    autocomplete="off">
                 </div>
               </div>
               <div class="col-md-6">

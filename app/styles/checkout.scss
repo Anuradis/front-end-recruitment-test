@@ -9,12 +9,27 @@ $error-color : rgba(255, 0, 0, 0.733);
   padding: 0 5px;
 }
 
-.checkout__main--title {
-  padding-left: 2rem;
-}
-
 .checkout__main {
   margin-bottom: 4rem;
+
+  * // 2 below classes ( .visa-icon and .checkout__main--title) cannot be applied from checkout.scss file, I've checked if it's being compiled properly, and everything looks all right, altought browser is not loading the latest saved and compiled stylesheet, there must be a configuration issue which might be related to gulp, I couldn't resolve it. In this case I will apply the below style as inline just for design reason, I'm aware that it is not a good practice. */
+
+  .visa-icon {
+    background-image: url(../images/visa.svg);
+    display: block;
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 430px;
+    bottom: 5px;
+
+  }
+
+  .checkout__main--title {
+    padding-left: 2rem;
+  }
 
   .error-text {
     font-size: 1.12rem;
@@ -118,19 +133,5 @@ $error-color : rgba(255, 0, 0, 0.733);
     height: 45px;
     text-transform: uppercase;
 
-
   }
-}
-
-.visa-icon {
-  background-image: url(../images/visa.svg);
-  display: block;
-  height: 40px;
-  width: 40px;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  left: 430px;
-  bottom: 5px;
-
 }
