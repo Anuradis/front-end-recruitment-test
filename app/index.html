@@ -284,55 +284,52 @@
           </div>
         </section>
       </div>
-      <div class="checkout__main" id="checkout">
-        <section class="section--center mdl-grid mdl-grid--no-spacing">
-          <div col-md-12>
-            <p class="checkout__main--title col-md-12"><span class="checkout__main--title-number">1</span>Personal Information
-            </p>
-
-          <div class="mdl-cell mdl-cell--12-col">
-            <div class="checkout_main--form container col-md-8">
-              <form class="form" id="form" action="/" method="GET" >
-                <div class="col-md-6">
-                  <div class="checkout_main--input form-group col-md-12">
-                    <label for="First name">First name</label>
-                    <input type="text" class="form-control" id="first-name" placeholder="Enter name" name="first-name">
-
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="checkout_main--input form-group col-md-12">
-                    <label for="Last name">Last name</label>
-                    <input type="text" class="form-control" id="last-name" placeholder="Enter last name"
-                      name="last-name" >
-                  </div>
-                </div>
-                <div class="col-md-12">
+      <section class="checkout__main" id="checkout">
+        <div class="container">
+          <p class="checkout__main--title col-md-12"><span class="checkout__main--title-number">1</span>Personal
+            Information
+          </p>
+          <div class="checkout_main--form container col-md-8">
+            <form class="form" id="form" action="/" method="GET">
+              <div class="col-md-6">
                 <div class="checkout_main--input form-group col-md-12">
-                  <label for="Email">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="email" name="email" >
+                  <label for="First name">First name</label>
+                  <input type="text" class="form-control" id="first-name" placeholder="Enter name" name="first-name">
+
                 </div>
               </div>
-                <div class="col-md-6">
-                  <div class="checkout_main--input form-group col-md-12">
-                    <label for="Country">Country</label>
-                    <select class="form-control" name="country" id="country" >
-                      <option value="" selected disabled>requred</option>
-                      <option value="US">United States</option>
-                      <option value="PL">Poland</option>
-                      <option value="FR">France</option>
-                      <option value="GB">Great Britain</option>
-                    </select>
-                  </div>
+              <div class="col-md-6">
+                <div class="checkout_main--input form-group col-md-12">
+                  <label for="Last name">Last name</label>
+                  <input type="text" class="form-control" id="last-name" placeholder="Enter last name" name="last-name">
                 </div>
-                <div class="col-md-6">
-                  <div class="checkout_main--input form-group col-md-12">
-                    <label for="Postal code">Postal Code</label>
-                    <input type="text" class="form-control" id="postal-code" placeholder="Enter your postal-code"
-                      name="postal-code">
-                  </div>
+              </div>
+              <div class="col-md-12">
+                <div class="checkout_main--input form-group col-md-12">
+                  <label for="Email">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="email" name="email">
                 </div>
-                <div class="col-md-12">
+              </div>
+              <div class="col-md-6">
+                <div class="checkout_main--input form-group col-md-12">
+                  <label for="Country">Country</label>
+                  <select class="form-control" name="country" id="country">
+                    <option value="" selected disabled>requred</option>
+                    <option value="US">United States</option>
+                    <option value="PL">Poland</option>
+                    <option value="FR">France</option>
+                    <option value="GB">Great Britain</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="checkout_main--input form-group col-md-12">
+                  <label for="Postal code">Postal Code</label>
+                  <input type="text" class="form-control" id="postal-code" placeholder="Enter your postal-code"
+                    name="postal-code">
+                </div>
+              </div>
+              <div class="col-md-12">
                 <div class="checkout_main--input form-group col-md-12">
                   <label for="Phone Number">Phone Number</label>
                   <input type="number" class="form-control" id="phone-number" placeholder="Enter phone number"
@@ -340,60 +337,59 @@
                 </div>
               </div>
               <div class="col-md-12">
-              <p class="checkout__main--title"><span class="checkout__main--title-number">2</span>Payement
-                Details <i class="fa fa-lock" style="font-weight: 900;"></i></p>
+                <p class="checkout__main--title"><span class="checkout__main--title-number">2</span>Payement
+                  Details <i class="fa fa-lock" style="font-weight: 900;"></i></p>
               </div>
-                  <div class="col-md-12">
+              <div class="col-md-12">
                 <div class="checkout_main--input form-group col-md-12">
                   <label for="Credit Card Number">Credit Card Number</label>
                   <input type="text" class="form-control" id="credit-card" placeholder="0000 - 0000 - 0000 - 0000"
                     name="credit-card">
-                    <span class="visa-icon" style="background-image: url(../images/visa.svg); display: inline-block;height: 40px; width: 40px; background-repeat: no-repeat; background-position: center; position: absolute; left: 430px; bottom: 5px;"></span>
+                  <span class="visa-icon"></span>
                 </div>
 
               </div>
-                <div class="col-md-6">
-                  <div class="checkout_main--input form-group col-md-12">
-                    <label for="Security code">Security code</label>
-                    <input type="password" class="form-control" id="security-code" placeholder="***"
-                      name="security-code">
-                  </div>
+              <div class="col-md-6">
+                <div class="checkout_main--input form-group col-md-12">
+                  <label for="Security code">Security code</label>
+                  <input type="password" class="form-control" id="security-code" placeholder="***" name="security-code">
                 </div>
-                <div class="col-md-6">
-                  <div class="checkout_main--input form-group col-md-12">
-                    <label for="Expiration date">Expiration date</label>
-                    <input type="text" class="form-control" id="expiration-date" placeholder="MM/YY"
-                      name="expiration-date">
-                  </div>
-                </div>
-                <div class="col-md-12 submit_button">
-                <button class="checkout__main--button col-md-12 btn-lg btn-success" type="submit" class="btn btn-default"> <i class="fa fa-shopping-cart" style="font-weight: 900;"></i> Complete Purchase</button>
               </div>
-              </form>
+              <div class="col-md-6">
+                <div class="checkout_main--input form-group col-md-12">
+                  <label for="Expiration date">Expiration date</label>
+                  <input type="text" class="form-control" id="expiration-date" placeholder="MM/YY"
+                    name="expiration-date">
+                </div>
+              </div>
+              <div class="col-md-12 col-xs-12 submit_button">
+                <button class="checkout__main--button col-md-12 col-xs-12 btn-lg btn-success" type="submit"
+                  class="btn btn-default"> <i class="fa fa-shopping-cart" style="font-weight: 900;"></i> Complete
+                  Purchase</button>
+              </div>
+            </form>
+          </div>
+          <div class="checkout_main--box col-md-4">
+            <div class="checkout_main--order">
+              <ul>
+                <p class="checkout__main--title-order">Your Order</p>
+                <li class="checkout__main--list-item">Apple Watch Sport
+                  <span class="checkout__main--list-value">$ 550</span></li>
+                <li class="checkout__main--list-item">Modern Buckle
+                  <span class="checkout__main--list-value">$ 380</span></li>
+                <hr>
+                <li class="checkout__main--list-item">Total
+                  Purchases<span class="checkout__main--list-value">$ 960.00</span></li>
+                <li class="checkout__main--list-item">Estimated Tax<span class="checkout__main--list-value">$ 0</span>
+                </li>
+                <hr>
+                <li class="checkout__main--list-item checkout__main--list-total">Total
+                  <span class="checkout__main--list-value checkout__main--list-value-total">$ 960</span></li>
+              </ul>
             </div>
           </div>
-            <div class="checkout_main--box container col-md-4">
-              <div class="checkout_main--order">
-                <ul>
-                  <p class="checkout__main--title-order">Your Order</p>
-                  <li class="checkout__main--list-item">Apple Watch Sport
-                    <span class="checkout__main--list-value">$ 550</span></li>
-                  <li class="checkout__main--list-item">Modern Buckle
-                    <span class="checkout__main--list-value">$ 380</span></li>
-                  <hr>
-                  <li class="checkout__main--list-item">Total
-                    Purchases<span class="checkout__main--list-value">$ 960.00</span></li>
-                  <li class="checkout__main--list-item">Estimated Tax<span class="checkout__main--list-value">$ 0</span>
-                  </li>
-                  <hr>
-                  <li class="checkout__main--list-item checkout__main--list-total">Total
-                    <span class="checkout__main--list-value checkout__main--list-value-total">$ 960</span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+        </div>
+      </section>
       <footer class="mdl-mega-footer">
         <div class="mdl-mega-footer--middle-section">
           <div class="mdl-mega-footer--drop-down-section">

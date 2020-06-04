@@ -9,8 +9,8 @@ $error-color : rgba(255, 0, 0, 0.733);
   padding: 0 5px;
 }
 
-.checkout__main--title.col-md-12 {
-  padding-left: 30px;
+.checkout__main--title {
+  padding-left: 2rem;
 }
 
 .checkout__main {
@@ -19,12 +19,6 @@ $error-color : rgba(255, 0, 0, 0.733);
   .error-text {
     font-size: 1.12rem;
     color: $error-color;
-  }
-
-  #credit-card {
-    background-image: url(../images/visa.svg);
-    height: 300px;
-    width: 300px;
   }
 
   .checkout_main--input {
@@ -126,4 +120,17 @@ $error-color : rgba(255, 0, 0, 0.733);
 
 
   }
+}
+
+.visa-icon {
+  background-image: url(../images/visa.svg);
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 430px;
+  bottom: 5px;
+
 }
